@@ -7,17 +7,21 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour {
 
     public float lookRadius = 10f;
+   
 
     Transform player;
     NavMeshAgent navAgent;
+    private Animator _anim;
 
     public GameObject playerObject;
+
 
 	// Use this for initialization
 	void Start () {
         playerObject = GameObject.FindGameObjectWithTag("Player");
         player = playerObject.transform;
 
+        _anim = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
 	}
 	
@@ -25,18 +29,29 @@ public class EnemyController : MonoBehaviour {
 	void Update () {
         float distance = Vector3.Distance(player.position, transform.position);
 
+
         if(distance <= lookRadius)
         {
             navAgent.SetDestination(player.position);
+            _anim.SetTrigger("Walk");
 
-            if(distance<= navAgent. stoppingDistance)
+            if (distance <= navAgent. stoppingDistance)
             {
-                //Attack
+                
                 //Face player
                 FacePlayer();
             }
         }
+        else
+        {
+            _anim.SetTrigger("Idle");
+        }
 	}
+
+    void Attack()
+    {
+        _anim.SetTrigger("Attack");
+    }
 
     void FacePlayer()
     {
@@ -52,5 +67,13 @@ public class EnemyController : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
 
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            _anim.SetTrigger("Attack");
+        }
     }
 }
