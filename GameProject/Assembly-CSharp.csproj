@@ -61,8 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animation\Scipts\Movement.cs" />
-    <Compile Include="Assets\Animation\Scipts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scipts\EnemyController.cs" />
+    <Compile Include="Assets\Scipts\Movement.cs" />
+    <Compile Include="Assets\Scipts\NewBehaviourScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Eibhlin/Desktop/College/GameProject2018/GameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
