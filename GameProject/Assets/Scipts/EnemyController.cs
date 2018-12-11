@@ -7,18 +7,20 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour {
 
     public float lookRadius = 10f;
-   
-
+    public int enemyHealth = 10;
+    
     Transform player;
     NavMeshAgent navAgent;
     private Animator _anim;
 
     public GameObject playerObject;
+    private Movement movementScript;
 
 
 	// Use this for initialization
 	void Start () {
         playerObject = GameObject.FindGameObjectWithTag("Player");
+        movementScript = FindObjectOfType<Movement>();
         player = playerObject.transform;
 
         _anim = GetComponent<Animator>();
@@ -69,11 +71,13 @@ public class EnemyController : MonoBehaviour {
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionStay(Collision other)
     {
         if(other.gameObject.tag == "Player")
         {
+            movementScript.playerHealth = movementScript.playerHealth - 1;
             _anim.SetTrigger("Attack");
+            Debug.Log(movementScript.playerHealth);
         }
     }
 }

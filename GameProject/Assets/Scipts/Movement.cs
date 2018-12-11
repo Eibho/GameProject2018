@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-    private Animator _animator;
-
     public float MaxSpeed = 5;
 
+    private Animator _animator;
     private Rigidbody _rb;
+    public int playerHealth = 50;
 
-    
-    
 
     // Use this for initialization
     void Start () {
 
         _rb = GetComponent<Rigidbody>();
         _animator = GetComponent<Animator>();
-        
+       
 
     }
 	
@@ -32,9 +30,9 @@ public class Movement : MonoBehaviour {
 
         
         Move(x, y);
-
         Jump();
         Shoot();
+        Die();
 
     }
 
@@ -62,6 +60,14 @@ public class Movement : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             _animator.SetTrigger("Shoot");
+        }
+    }
+
+    private void Die()
+    {
+        if(playerHealth == 0)
+        {
+            Debug.Log("die");
         }
     }
 
