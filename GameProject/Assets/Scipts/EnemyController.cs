@@ -68,7 +68,7 @@ public class EnemyController : MonoBehaviour {
 
     private void Destroy()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3);
     }
 
     void FacePlayer()
