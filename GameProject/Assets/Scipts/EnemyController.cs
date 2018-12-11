@@ -62,7 +62,13 @@ public class EnemyController : MonoBehaviour {
         if(enemyHealth == 0)
         {
             _anim.SetTrigger("Die");
+            Destroy();
         }
+    }
+
+    private void Destroy()
+    {
+        Destroy(gameObject, 5);
     }
 
     void FacePlayer()
