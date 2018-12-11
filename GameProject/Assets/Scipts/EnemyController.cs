@@ -48,11 +48,21 @@ public class EnemyController : MonoBehaviour {
         {
             _anim.SetTrigger("Idle");
         }
+
+        Die();
 	}
 
     void Attack()
     {
         _anim.SetTrigger("Attack");
+    }
+
+    void Die()
+    {
+        if(enemyHealth == 0)
+        {
+            _anim.SetTrigger("Die");
+        }
     }
 
     void FacePlayer()
