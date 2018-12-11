@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_MinSize: {x: 883, y: 492}
   m_MaxSize: {x: 16008, y: 14042}
   vertical: 1
-  controlID: 2230
+  controlID: 46
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_MinSize: {x: 883, y: 492}
   m_MaxSize: {x: 16008, y: 14042}
   vertical: 0
-  controlID: 2231
+  controlID: 47
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_MinSize: {x: 606, y: 492}
   m_MaxSize: {x: 12006, y: 14042}
   vertical: 1
-  controlID: 2232
+  controlID: 48
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_MinSize: {x: 606, y: 221}
   m_MaxSize: {x: 12006, y: 4021}
   vertical: 0
-  controlID: 2233
+  controlID: 49
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -600,9 +600,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.3895864, y: 0.7967512, z: -14.924871}
+    m_Target: {x: -1.131135, y: 8.451268, z: -7.6009703}
     speed: 2
-    m_Value: {x: 0.3895864, y: 0.7967512, z: -14.924871}
+    m_Value: {x: -1.131135, y: 8.451268, z: -7.6009703}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -630,13 +630,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.07979333, y: -0.24935074, z: 0.020634204, w: 0.96492505}
+    m_Target: {x: 0.13328788, y: -0.1998171, z: 0.027476227, w: 0.97036886}
     speed: 2
-    m_Value: {x: -0.07979333, y: 0.24935073, z: -0.020634204, w: -0.964925}
+    m_Value: {x: 0.13328366, y: -0.19981079, z: 0.027475359, w: 0.9703382}
   m_Size:
-    m_Target: 24.206135
+    m_Target: 0.6095823
     speed: 2
-    m_Value: 24.206135
+    m_Value: 0.6095823
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -802,20 +802,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Shaders
+    - Assets/Materials/EnemyMaterials
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Shaders
+  - Assets/Materials/EnemyMaterials
   m_LastFoldersGridSize: 74
   m_LastProjectPath: C:\Users\Eibhlin\Desktop\College\GameProject2018\GameProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 52150000
-    m_LastClickedID: 5458
-    m_ExpandedIDs: 00000000a80e0000fa15000000ca9a3b
+    m_SelectedIDs: ee390000
+    m_LastClickedID: 14830
+    m_ExpandedIDs: 00000000ac0e0000141000004016000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -843,7 +843,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a80e0000fa15000000ca9a3b
+    m_ExpandedIDs: 00000000ac0e000040160000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -871,7 +871,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300008a270000a229000000000000ce57feffe22900009c270000ac270000ba2700009c280000a6280000bc280000f02d0000162b0000922f0000923500007635000088350000a22b0000fa320000942a000078380000363b0000643d0000b22a0000e02c0000a82c0000f02b0000e22c0000fc2c0000a62b00009a2b0000b62a0000ee2c0000b42c0000a82b0000182a0000982a00007e3000009c2b000086330000302b0000ba2c0000042d0000dc2a00001aa200002cd60000486e0000403400002e2e0000962d00001c2e00009e2e00009a2c0000fe0b0000c6300000640c0000cc4f00000c160000
+    m_ExpandedInstanceIDs: c62300008a270000a229000000000000ce57feffe22900009c270000ac270000ba2700009c280000a6280000bc280000f02d0000162b0000922f0000923500007635000088350000a22b0000fa320000942a000078380000363b0000643d0000b22a0000e02c0000a82c0000f02b0000e22c0000fc2c0000a62b00009a2b0000b62a0000ee2c0000b42c0000a82b0000182a0000982a00007e3000009c2b000086330000302b0000ba2c0000042d0000dc2a00001aa200002cd60000486e0000403400002e2e0000962d00001c2e00009e2e00009a2c0000fe0b0000c6300000640c0000cc4f00000c160000521600007e10000036150000b8140000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
