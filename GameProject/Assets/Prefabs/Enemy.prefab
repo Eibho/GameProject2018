@@ -908,6 +908,7 @@ MonoBehaviour:
   lookRadius: 10
   enemyHealth: 10
   playerObject: {fileID: 0}
+  enemyObject: {fileID: 1953579025001628}
 --- !u!135 &135207517675968580
 SphereCollider:
   m_ObjectHideFlags: 1

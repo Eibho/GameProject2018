@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour {
     private Animator _anim;
 
     public GameObject playerObject;
+    public GameObject enemyObject;
     private Movement movementScript;
 
 
@@ -68,7 +69,7 @@ public class EnemyController : MonoBehaviour {
 
     private void Destroy()
     {
-        Destroy(gameObject, 3);
+        Destroy(enemyObject, 3);
     }
 
     void FacePlayer()
