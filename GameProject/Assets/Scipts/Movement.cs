@@ -1,6 +1,7 @@
 ﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class Movement : MonoBehaviour {
     private Rigidbody _rb;
     public int playerHealth = 50;
 
+    public Gun gun;
 
     // Use this for initialization
     void Start () {
@@ -60,6 +62,7 @@ public class Movement : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             _animator.SetTrigger("Shoot");
+          
         }
     }
 
@@ -67,8 +70,17 @@ public class Movement : MonoBehaviour {
     {
         if(playerHealth == 0)
         {
-            Debug.Log("die");
+            _animator.SetTrigger("Die");
+            Invoke("LoadScene", 5f);
         }
     }
 
+   private void LoadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
+
+    
+
+

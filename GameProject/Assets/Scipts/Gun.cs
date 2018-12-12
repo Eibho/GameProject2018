@@ -10,6 +10,9 @@ public class Gun : MonoBehaviour {
 
     private EnemyController enemy;
 
+    public Bullet bullet;
+    public Transform firePoint;
+
     private void Start()
     {
         enemy = FindObjectOfType<EnemyController>();
@@ -27,6 +30,8 @@ public class Gun : MonoBehaviour {
 
     void Shoot()
     {
+        Bullet newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as Bullet;
+
         RaycastHit hit;
 
 

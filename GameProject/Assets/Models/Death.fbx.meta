@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 6001f756e6ce19841a7a5f34761018c3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BackBone
+    100004: Character
+    100006: //RootNode
+    100008: Head
+    100010: Head_end
+    100012: LeftArm
+    100014: LeftArm.001
+    100016: LeftArm.001_end
+    100018: LeftFoot
+    100020: LeftFoot_end
+    100022: LeftHand
+    100024: LeftHand_end
+    100026: LeftHip
+    100028: LeftLowerLeg
+    100030: LeftShoulder
+    100032: LeftUpperLeg
+    100034: RightArm
+    100036: RightFoot
+    100038: RightFoot_end
+    100040: RightHip
+    100042: RightLowerLeg
+    100044: RightShoulder
+    100046: RightUpperLeg
+    100048: RootBone
+    100050: UpperBack
+    400000: Armature
+    400002: BackBone
+    400004: Character
+    400006: //RootNode
+    400008: Head
+    400010: Head_end
+    400012: LeftArm
+    400014: LeftArm.001
+    400016: LeftArm.001_end
+    400018: LeftFoot
+    400020: LeftFoot_end
+    400022: LeftHand
+    400024: LeftHand_end
+    400026: LeftHip
+    400028: LeftLowerLeg
+    400030: LeftShoulder
+    400032: LeftUpperLeg
+    400034: RightArm
+    400036: RightFoot
+    400038: RightFoot_end
+    400040: RightHip
+    400042: RightLowerLeg
+    400044: RightShoulder
+    400046: RightUpperLeg
+    400048: RootBone
+    400050: UpperBack
+    2100000: Material.011
+    2100002: Material.002
+    2100004: Hair
+    2100006: Skin
+    2100008: HeadBand
+    2100010: Base
+    2100012: Material.008
+    2100014: Material.010
+    4300000: Character
+    7400000: Armature|Backwards
+    7400002: Armature|BackwardsOW
+    7400004: Armature|CompleteJump
+    7400006: Armature|Death
+    7400008: Armature|DELETE
+    7400010: Armature|Fall
+    7400012: Armature|FallOtherWay
+    7400014: Armature|Idle
+    7400016: Armature|IdleOtherWay
+    7400018: Armature|JumpOtherWay
+    7400020: Armature|Run
+    7400022: Armature|Shoot
+    7400024: Armature|SideStep
+    7400026: Armature|SideWalk
+    7400028: Armature|SideWalkOW
+    7400030: Armature|T-Pose
+    7400032: Armature|Jump
+    7400034: Armature|RunOtherWay
+    7400036: Armature|Turn
+    7400038: Armature|TurnOtherWay
+    7400040: Armature|WalkOtherWay
+    9500000: //RootNode
+    13700000: Character
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: dd8ee97bc59b7fa4e8a777f78bb0ad52,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
