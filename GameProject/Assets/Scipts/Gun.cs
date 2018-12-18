@@ -38,7 +38,7 @@ public class Gun : MonoBehaviour {
         if(Physics.Raycast(gun.transform.position, gun.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
-            enemy.enemyHealth = enemy.enemyHealth - 1;
+            
         }
     }
 }

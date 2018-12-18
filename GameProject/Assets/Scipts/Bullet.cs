@@ -6,11 +6,12 @@ public class Bullet : MonoBehaviour
 {
 
     public float speed;
+    private EnemyController enemy;
 
     // Use this for initialization
     void Start()
     {
-
+        enemy = FindObjectOfType<EnemyController>();
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject,0.2f);
             Debug.Log("Hit");
+            enemy.enemyHealth = enemy.enemyHealth - 1;
         }
         
     }
